@@ -1,0 +1,22 @@
+<div class="container">
+
+  <mat-form-field>
+    <input matInput [matDatepicker]="picker" placeholder="Choose a date" (click)="picker.open()" [(ngModel)]="currentDate" (dateChange)="onDateChange()">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>  
+  </mat-form-field>
+  <mat-divider vertical="true"></mat-divider>
+
+  <mat-form-field>
+    <mat-label>Select currency</mat-label>
+    <mat-select [(ngModel)]="currentCurrency" [disabled]="!currencyList || currencyList.Length == 0">
+      <div *ngFor="let currency of currencyList">
+        <mat-option [value]="currency.order">{{currency.name}}</mat-option>
+      </div>
+    </mat-select>
+  </mat-form-field>
+  <input class="result" matInput placeholder="Result" disabled [(ngModel)]="currencyResult" />
+  <mat-divider></mat-divider>
+  <button  mat-stroked-button [disabled]="!currentCurrency || !currentDate" (click)="getExchangeRate()">Get Rate</button>
+
+</div>

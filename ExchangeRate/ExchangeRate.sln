@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExchangeRate", "ExchangeRate\ExchangeRate.csproj", "{E3E47D77-92EF-4ED4-AE97-5BC397269EE2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3E47D77-92EF-4ED4-AE97-5BC397269EE2}.Debug|x86.ActiveCfg = Debug|x86
+		{E3E47D77-92EF-4ED4-AE97-5BC397269EE2}.Debug|x86.Build.0 = Debug|x86
+		{E3E47D77-92EF-4ED4-AE97-5BC397269EE2}.Release|x86.ActiveCfg = Release|x86
+		{E3E47D77-92EF-4ED4-AE97-5BC397269EE2}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+EndGlobal
